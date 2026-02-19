@@ -41,20 +41,20 @@ namespace ECommerce.Persistance.Data.DataSeed
                 {
                     var User01 = new ApplicationUser
                     {
-                        DisplayName = "Mark Sameeh",
-                        UserName = "Mark",
-                        Email = "mark@gmail.com",
-                        PhoneNumber = "01259634815",
+                        DisplayName = "Nourhan Taha",
+                        UserName = "Nourhan",
+                        Email = "norhantaha43@gmail.com",
+                        PhoneNumber = "01276545805",
                     };
                     var User02 = new ApplicationUser
                     {
                         DisplayName = "Menna Ahmed",
                         UserName = "Menna",
                         Email = "Menna@gmail.com",
-                        PhoneNumber = "01153624795",
+                        PhoneNumber = "01111111111",
                     };
 
-                    await _userManager.CreateAsync(User01, "Mark@1234");
+                    await _userManager.CreateAsync(User01, "Nourhan@1234");
                     await _userManager.CreateAsync(User02, "Menna@1234");
 
                     await _userManager.AddToRoleAsync(User01, "SuperAdmin");

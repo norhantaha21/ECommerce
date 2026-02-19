@@ -25,11 +25,7 @@ namespace ECommerce.Persistance.IdentityData.DbContexts
             builder.Entity<IdentityRole>().ToTable("Roles");
             builder.Entity<IdentityUserRole<string>>().ToTable("UserRoles");
 
-            //builder.Entity<ApplicationUser>()
-            //    .HasOne(a => a.Address)
-            //    .WithOne(b => b.User)
-            //    .HasForeignKey<Address>(b => b.UserId);
-
+           
         }
     }
 }
